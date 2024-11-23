@@ -35,7 +35,7 @@ body {
 .card .img {
   width: 120px; /* Увеличен размер изображения */
   height: 120px;
-  background-color: #000000;
+  background-color: #050505;
   border-radius: 50%;
   margin: 0 auto 20px;
   overflow: hidden;
@@ -62,22 +62,49 @@ body {
 
 .share a {
   margin: 0 12px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 24px; /* Увеличен размер иконок */
 }
 
-.share a:hover {
-  color: #3a3a3a;
+/* Убираем синюю обводку на ссылках */
+a {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  outline: none; /* Убираем обводку при фокусе */
 }
 
-.share a img {
-  width: 40px; /* Размер иконок */
-  height: 40px;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
+button {
+  height: 50px;
+  margin: 5px;
+  width: 100px; /* Ширина кнопки, можно настроить */
+  background: #333;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  box-shadow: none; /* Убираем свечение по умолчанию */
+  outline: none; /* Убираем обводку */
 }
 
-.share a:hover img {
-  transform: scale(1.1);
+/* Свечение только при наведении */
+button:hover {
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+}
+
+/* Активное состояние кнопки */
+button:active {
+  box-shadow: 5px 5px 24px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+}
+
+/* Добавляем стиль для выравнивания кнопок горизонтально */
+.share {
+  display: flex;
+  gap: -3px; /* Расстояние между кнопками */
+  justify-content: center; /* Центрируем кнопки */
 }
