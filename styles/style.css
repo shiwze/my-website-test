@@ -108,3 +108,32 @@ button:active {
   gap: -3px; /* Расстояние между кнопками */
   justify-content: center; /* Центрируем кнопки */
 }
+
+/* Таймер */
+.timer {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Снег */
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: white;
+  pointer-events: none;
+  z-index: 1000;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
