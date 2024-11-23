@@ -33,3 +33,16 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 100);
+
+// Скрытая гифка
+const profilePic = document.getElementById('profile-pic');
+const hiddenGifContainer = document.getElementById('hidden-gif-container');
+
+profilePic.addEventListener('click', () => {
+  hiddenGifContainer.classList.toggle('active');
+});
+
+// Закрытие гифки при повторном клике
+hiddenGifContainer.addEventListener('click', () => {
+  hiddenGifContainer.classList.remove('active');
+});
