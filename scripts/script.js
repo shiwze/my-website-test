@@ -24,7 +24,7 @@ function createSnowflake() {
   snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
   snowflake.style.opacity = Math.random();
   snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
-  snowflake.textContent = '❄';
+  snowflake.textContent = 'илья соси хуйца';
   document.body.appendChild(snowflake);
 
   setTimeout(() => {
