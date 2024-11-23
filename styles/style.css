@@ -27,14 +27,14 @@ body {
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 40px;
-  width: 350px; /* Увеличен размер карточки */
+  width: 400px; /* Увеличен размер карточки */
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
 .card .img {
-  width: 100px;
-  height: 100px;
+  width: 120px; /* Увеличен размер изображения */
+  height: 120px;
   background-color: #ff6a00;
   border-radius: 50%;
   margin: 0 auto 20px;
@@ -48,7 +48,7 @@ body {
 }
 
 .card span {
-  font-size: 20px;
+  font-size: 24px; /* Увеличен размер текста */
   font-weight: 700;
   display: block;
   margin-bottom: 15px;
@@ -64,28 +64,20 @@ body {
   margin: 0 12px;
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px; /* Увеличен размер иконок */
 }
 
 .share a:hover {
   color: #ffcc00;
 }
 
-/* Иконки соцсетей */
-.share a {
-  display: inline-block;
-  width: 40px;
+.share a img {
+  width: 40px; /* Размер иконок */
   height: 40px;
-  text-align: center;
-  line-height: 40px;
   border-radius: 50%;
-  background-color: #333;
+  transition: transform 0.3s ease;
 }
 
-.share a svg {
-  fill: #fff;
-}
-
-.share a:hover {
-  background-color: #ff6a00;
+.share a:hover img {
+  transform: scale(1.1);
 }
