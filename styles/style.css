@@ -27,7 +27,7 @@ body {
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 40px;
-  width: 600px; /* Увеличен размер карточки */
+  width: 510px; /* Увеличен размер карточки */
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
@@ -67,30 +67,29 @@ body {
 /* Убираем синюю обводку на ссылках */
 a {
   text-decoration: none; /* Убираем подчеркивание ссылок */
-  outline: none; /* Убираем обводку при фокусе */
+  display: block; /* Делаем ссылки блочными */
 }
-
+/* Общие стили для кнопок */
 button {
-  height: 50px;
-  margin: 5px;
-  width: 100px; /* Ширина кнопки, можно настроить */
-  background: #333;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  align-items: center;
-  font-family: Consolas, Courier New, monospace;
-  border: solid #404c5d 1px;
-  font-size: 16px;
-  color: rgb(161, 161, 161);
-  transition: 500ms;
-  border-radius: 5px;
+  width: 140px; /* Фиксированная ширина */
+  height: 50px; /* Фиксированная высота */
   background: linear-gradient(145deg, #2e2d2d, #212121);
-  box-shadow: none; /* Убираем свечение по умолчанию */
-  outline: none; /* Убираем обводку */
+  border: 1px solid #404c5d;
+  color: white;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s, color 0.3s;
+}
+.button-row {
+  display: flex;
+  justify-content: center; /* Центрируем кнопки в строке */
+  gap: 10px; /* Расстояние между кнопками в строке */
+  margin-bottom: 10px; /* Расстояние между строками */
 }
 
-/* Свечение только при наведении */
+
+/* Эффекты при наведении */
 button:hover {
   box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
   color: #d6d6d6;
@@ -102,11 +101,12 @@ button:active {
   color: #d6d6d6;
 }
 
-/* Добавляем стиль для выравнивания кнопок горизонтально */
 .share {
   display: flex;
-  gap: -3px; /* Расстояние между кнопками */
-  justify-content: center; /* Центрируем кнопки */
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
 }
 
 /* Таймер */
