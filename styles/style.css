@@ -27,7 +27,7 @@ body {
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 40px;
-  width: 400px; /* Увеличен размер карточки */
+  width: 600px; /* Увеличен размер карточки */
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
