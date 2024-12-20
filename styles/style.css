@@ -1,3 +1,17 @@
+/* Custom Styles */
+.notice {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000; /* Устанавливаем выше остальных элементов */
+}
+
 /* Общие стили */
 * {
   margin: 0;
@@ -31,7 +45,6 @@ body {
   height: 100%;
   object-fit: cover; /* Подгон изображения */
 }
-
 
 .container {
   display: flex;
@@ -88,7 +101,6 @@ body {
   text-shadow: none; /* Убираем подсветку текста */
 }
 
-/* Анимация влево */
 .button.left:before,
 .button.left:after {
   content: '';
@@ -113,7 +125,6 @@ body {
   }
 }
 
-/* Анимация вправо */
 .button.right:before,
 .button.right:after {
   content: '';
@@ -142,7 +153,6 @@ body {
   filter: blur(20px); /* Снижаем интенсивность света */
 }
 
-/* Центрирование кнопок */
 .button-row {
   display: flex;
   justify-content: center;
@@ -154,7 +164,6 @@ a {
   text-decoration: none;
 }
 
-/* Таймер */
 .timer {
   position: fixed;
   top: 10px;
@@ -167,7 +176,6 @@ a {
   border-radius: 5px;
 }
 
-/* Снег */
 .snowflake {
   position: fixed;
   top: -10px;
